@@ -10,7 +10,7 @@
  * @since 
  */
 ?>
-	<section class="footer">
+	<section class="footer bg-slate-invert">
 		<img src="<?php echo THEME_IMAGES; ?>brand/window-cleaning-dot-com-logo.png">
 		<h3 class="bumper-bottom bumper-top">Like to chat? Call our team anytime at (123) 123-1234 or <a href="">get an online estimate.</a></h3>
 		<p class="footer-links"><a href="">Visit WindowCleaning.com</a><a href="">Our Locations</a><a href="">News About Us</a><a href="">Apply for Membership</a></p>
