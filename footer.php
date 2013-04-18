@@ -10,11 +10,11 @@
  * @since 
  */
 ?>
-	<section class="footer bg-slate-invert">
-		<img src="<?php echo THEME_IMAGES; ?>brand/window-cleaning-dot-com-logo.png">
-		<h3 class="bumper-bottom bumper-top">Like to chat? Call our team anytime at (123) 123-1234 or <a href="">get an online estimate.</a></h3>
-		<p class="footer-links"><a href="">Visit WindowCleaning.com</a><a href="">Our Locations</a><a href="">News About Us</a><a href="">Apply for Membership</a></p>
-		<p><small>North America's Best Window Cleaners | Copyright 2013 | <a href="">Privacy</a> | <a href="">Terms</a></small></p>
+	<section class="footer bg-slate-invert" itemprop="member" itemscope="http://schema.org/Organization">
+		<img src="<?php echo THEME_IMAGES; ?>brand/window-cleaning-dot-com-logo.png" itemscope="brand" itemprop="image">
+		<h3 class="bumper-bottom bumper-top">Like to chat? Call our team anytime at <?=get_phone_number()?> or <a href="" class="quick-estimate">get an online estimate.</a></h3>
+		<p class="footer-links"><a href="http://www.windowcleaning.com" rel="nofollow">Visit <span itemprop="name">WindowCleaning.com</span></a><a href="http://www.windowcleaning.com/locations" rel="nofollow">Our Locations</a><a href="http://www.windowcleaning.com/news" rel="nofollow">News About Us</a><a href="http://www.windowcleaning.com/members">Apply for Membership</a></p>
+		<p><small><span itemprop="description">North America's Best Window Cleaners</span> | Copyright 2013 | <a href="">Privacy</a> | <a href="">Terms</a></small></p>
 	</section>
 
 </div><!-- / .container -->
