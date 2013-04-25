@@ -8,9 +8,6 @@ Template: playground
 Version: 1.0
 */
 
-/*@import url("../playground/theme-min.css");*/
-/*@import url("../playground/theme-responsive.css");*/
-
 .migrate h1 {
 	font-size: 32px;
 	line-height: 36px;
