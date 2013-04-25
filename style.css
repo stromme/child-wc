@@ -11,8 +11,51 @@ Version: 1.0
 @import url("../playground/theme-min.css");
 @import url("../playground/theme-responsive.css");
 
-.migrate-service h1 {
+.migrate h1 {
 	font-size: 32px;
 	line-height: 36px;
-	margin-bottom: 12px;
+	margin-bottom: 20px;
+}
+
+.migrate .service-image img {
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+	   -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+	        box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+}
+.migrate .service-image {
+	padding: 12px 0px;
+}
+
+.migrate .service-image span {
+	text-align: center;
+}
+
+.migrate .service-image-sbs .service-image img {
+	max-width: 230px;
+}
+.migrate .service-image-sbs .service-image:first-of-type {
+	padding-right: 20px;
+}
+
+.migrate .service-image-sbs .service-image {
+	float: left;
+}
+
+.migrate .service-image-sbs .service-image span {
+	display: block;
+	text-align: center;
+	padding-top: 12px;
+}
+
+.migrate .youtube {
+	padding-bottom: 20px;
+}
+@media (min-width: 1200px) {
+	.migrate .service-image-sbs .service-image img {
+		max-width: 290px;
+	}
 }
