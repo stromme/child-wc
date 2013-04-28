@@ -24,7 +24,7 @@ Version: 1.0
 	        box-shadow: 0 3px 7px rgba(0,0,0,0.3);
 }
 .migrate .service-image {
-	padding: 12px 0px;
+	padding: 12px 0;
 }
 
 .migrate .service-image span {
