@@ -14,7 +14,7 @@ add_action('wp_head', 'hs_google_publisher');
 
 function get_social_media_link(){
   $social = get_option('social_connections');
-  $twitter = $facebook = $google_page = '';
+  $twitter = $facebook = $linkedin = $google_page = '';
   if($social){
     $social = json_decode($social);
     if(isset($social->twitter->active) && $social->twitter->active && $social->twitter->screen_name) $twitter = 'http://twitter.com/'.$social->twitter->screen_name;
@@ -34,6 +34,15 @@ function get_social_media_link(){
         }
       }
     }
+    if(isset($social->linkedin->active) && $social->linkedin->active){
+      if(isset($social->linkedin->link) && $social->linkedin->link!=''){
+        $linkedin = $social->linkedin->link;
+      }
+      else if(isset($social->linkedin->url) && $social->linkedin->url!=''){
+        $linkedin = explode('&', $social->linkedin->url);
+        $linkedin = $linkedin[0];
+      }
+    }
   }
   $owner = get_site_owner();
   if($owner){
@@ -41,10 +50,11 @@ function get_social_media_link(){
     if($google_page && $google_page!='' && !strstr($google_page, '?rel=author')) $google_page .= '?rel=author';
     unset($owner);
   }
-  if($twitter=='' && $facebook=='' && $google_page=='') return false;
+  if($twitter=='' && $facebook=='' && $linkedin=='' && $google_page=='') return false;
   return array(
     'twitter' => $twitter,
     'facebook' => $facebook,
+    'linkedin' => $linkedin,
     'googleplus' => $google_page
   );
 }
