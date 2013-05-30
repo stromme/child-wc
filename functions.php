@@ -20,7 +20,7 @@ function get_social_media_link(){
     if(isset($social->twitter->active) && $social->twitter->active && $social->twitter->screen_name) $twitter = 'http://twitter.com/'.$social->twitter->screen_name;
     if(isset($social->facebook->active) && $social->facebook->active){
       if($social->facebook->selected_id==$social->facebook->id){
-        $facebook = 'http://www.facebook.com/'.($social->facebook->username!='')?$social->facebook->username:$social->facebook->id;
+        $facebook = 'http://www.facebook.com/'.(($social->facebook->username!='')?$social->facebook->username:$social->facebook->id);
       }
       else if(isset($social->facebook->pages) && count($social->facebook->pages)>0){
         foreach($social->facebook->pages as $page){
