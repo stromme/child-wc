@@ -20,9 +20,9 @@
       if($social_media){
     ?>
     <p class="footer-social">
-      <?php if($social_media['twitter']!=''){ ?><a href="<?=$social_media['twitter']?>" title="<?=$social_media['twitter']?>"><i class="icon-twitter"></i></a><?php } ?>
-      <?php if($social_media['facebook']!=''){ ?><a href="<?=$social_media['facebook']?>" title="<?=$social_media['facebook']?>"><i class="icon-facebook"></i></a><?php } ?>
-      <?php if($social_media['googleplus']!=''){ ?><a href="<?=$social_media['googleplus']?>" title="<?=$social_media['googleplus']?>"><i class="icon-googleplus"></i></a><?php } ?>
+      <?php if($social_media['twitter']!=''){ ?><a href="<?=$social_media['twitter']?>" title="<?=$social_media['twitter']?>" target="_blank"><i class="icon-twitter"></i></a><?php } ?>
+      <?php if($social_media['facebook']!=''){ ?><a href="<?=$social_media['facebook']?>" title="<?=$social_media['facebook']?>" target="_blank"><i class="icon-facebook"></i></a><?php } ?>
+      <?php if($social_media['googleplus']!=''){ ?><a href="<?=$social_media['googleplus']?>" title="<?=$social_media['googleplus']?>" target="_blank"><i class="icon-googleplus"></i></a><?php } ?>
     </p>
     <?php } ?>
 	</section>
