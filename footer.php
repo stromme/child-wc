@@ -16,7 +16,7 @@
 		<p class="footer-links"><a href="<?=get_site_url(1)?>" rel="nofollow" itemprop="name">WindowCleaning.com</a><a href="<?=get_site_url(1)?>/locations" rel="nofollow">Our Locations</a><a href="<?=get_site_url(1)?>/news" rel="nofollow">News About Us</a><a href="<?=get_site_url(1)?>/members">Apply for Membership</a></p>
 		<p><small><span itemprop="description">North America's Best Window Cleaners</span> | Copyright 2013 | <a href="<?=get_site_url(1)?>/privacy">Privacy</a> | <a href="<?=get_site_url(1)?>/terms">Terms</a></small></p>
     <?php
-      $social_media = get_social_media_link();
+      $social_media = TB_Frontend::get_social_media_link();
       if($social_media){
     ?>
     <p class="footer-social">
